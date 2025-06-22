@@ -309,13 +309,32 @@ export const DIFFERENTIATORS: Differentiator[] = [
 ];
 
 // --- TESTIMONIAL SECTION ---
-export const TESTIMONIAL_VISUAL_URL = undefined;
-export const TESTIMONIAL_DATA: Testimonial = {
-  quote: "Working with Apuye transformed our customer satisfaction rates. Her analytical approach and attention to detail delivered results we didn't expect from a virtual assistant.",
-  clientName: 'Dr. Evelyn Adebayo',
-  company: 'Innovate Solutions Ltd.',
-  rating: 5,
-};
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    quote: "Blessing's risk management expertise transformed our compliance process. Her SOPs and attention to detail made a measurable difference.",
+    clientName: "Gamma Loans, Calabar",
+    company: "Risk & Compliance Department",
+    rating: 5
+  },
+  {
+    quote: "Apuye streamlined our logistics and saved us significant costs. Her inventory system and quick response to issues made a huge difference.",
+    clientName: "Debbie's Fashion House, Benin City",
+    company: "Owner, Debbie's Fashion House",
+    rating: 5
+  },
+  {
+    quote: "Blessing transformed our entire customer service operation. The ASL accessibility feature alone opened up a completely new market for us. Her systematic approach and attention to detail delivered results beyond our expectations.",
+    clientName: "Apuye's Phamaceutical",
+    company: "Founder, Apuye's Phamaceutical",
+    rating: 5
+  },
+  {
+    quote: "Apuye's professionalism and dedication ensured our project was delivered on time and exceeded expectations. Highly recommended!",
+    clientName: "Chuka Eze",
+    company: "Project Manager, Eze Logistics",
+    rating: 5
+  }
+];
 
 // --- CONTACT SECTION ---
 export const CONTACT_VISUAL_URL = undefined;
