@@ -1,55 +1,56 @@
-import * as React from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { PORTFOLIO_ITEMS, PORTFOLIO_SUBTITLE, PORTFOLIO_TITLE_ACCENT } from '../../constants';
 import SectionWrapper from '../SectionWrapper';
-import { PORTFOLIO_ITEMS, PORTFOLIO_TITLE_ACCENT, PORTFOLIO_SUBTITLE } from '../../constants';
-import { SectionWrapperProps, PortfolioItem } from '../../types';
+import Launch from '@mui/icons-material/Launch';
+import { Tag } from '../common';
 
-const PortfolioSection: React.FC<Pick<SectionWrapperProps, 'id'>> = ({ id }) => {
+const PortfolioSection: React.FC = () => {
   return (
-    <SectionWrapper 
-        id={id} 
-        title={`Real ${PORTFOLIO_TITLE_ACCENT}, Real Impact`}
-        titleAccent={PORTFOLIO_TITLE_ACCENT}
-        subtitle={PORTFOLIO_SUBTITLE}
-        className="bg-brand-page-bg" 
-    >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {PORTFOLIO_ITEMS.map((item: PortfolioItem) => (
-          <div 
-            key={item.id} 
-            className={`group bg-brand-card-bg rounded-3xl overflow-hidden shadow-soft-lg hover:shadow-lift 
-                        transition-all duration-500 transform hover:-translate-y-2 border border-black/5
-                        flex flex-col h-full 
-                        ${item.isFeatured ? 'lg:col-span-1 md:col-span-2' : 'lg:col-span-1'}`} 
+    <SectionWrapper id="portfolio">
+      <h2 className="text-3xl font-bold text-center sm:text-4xl text-brand-charcoal">
+        Showcasing <span className="text-brand-emerald">{PORTFOLIO_TITLE_ACCENT}</span>
+      </h2>
+      <p className="mt-4 text-lg text-center text-gray-600">
+        {PORTFOLIO_SUBTITLE}
+      </p>
+
+      <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {PORTFOLIO_ITEMS.map((item) => (
+          <Link
+            to={`/portfolio/${item.id}`}
+            key={item.id}
+            className="group bg-brand-card-bg rounded-3xl p-0 shadow-soft-lg hover:shadow-lift transition-all duration-300 transform hover:-translate-y-2 hover:scale-103 relative overflow-hidden border border-black/5"
           >
-            <div className="aspect-video overflow-hidden relative">
-              <img 
-                src={item.imageUrl} 
-                alt={item.imageAlt || `Visual for ${item.title}`} 
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+            <div className="relative">
+              <img
+                src={item.imageUrl}
+                alt={item.imageAlt}
+                className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105 rounded-t-3xl"
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-4">
-                <span className="text-white text-center text-md font-semibold border-2 border-white/70 rounded-full px-4 py-2 backdrop-blur-sm bg-black/30">
-                    {item.title}
-                </span>
+              <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition-colors duration-300 rounded-t-3xl"></div>
+              <div className="absolute top-4 right-4 bg-brand-emerald text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Launch className="w-5 h-5" />
               </div>
             </div>
-            
-            <div className="p-6 md:p-8 flex-grow flex flex-col">
-              {/* Tag div with improved styling to hug content */}
-              <div className="portfolio-tag bg-brand-green-tint-light text-brand-emerald border border-brand-emerald px-3 py-1.5 rounded-full text-xs font-semibold mb-4 uppercase tracking-wider w-fit">
-                {item.category}
+            <div className="p-6 flex flex-col h-full">
+              <div className="mb-3">
+                <Tag text={item.category} className="bg-brand-emerald/10 text-brand-emerald font-semibold" />
               </div>
-              
-              <h3 className="text-lg md:text-xl font-bold text-brand-charcoal mb-3">{item.title}</h3>
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-5 line-clamp-3 md:line-clamp-4 flex-grow">{item.description}</p>
-              
-              {/* Metric Box */}
-              <div className="mt-auto pt-2">
-                <div className="text-xl md:text-2xl font-bold text-brand-emerald mb-1">{item.metric}</div>
-                <div className="text-gray-600 text-xs leading-snug">{item.impact}</div>
+              <h3 className="text-xl font-bold text-brand-charcoal mb-2">{item.title}</h3>
+              <div className="flex flex-wrap gap-2 mb-2">
+                {item.tags && item.tags.map((tag, i) => (
+                  <span key={i} className="px-2 py-0.5 rounded bg-gray-100 text-gray-700 text-xs font-medium">{tag}</span>
+                ))}
+              </div>
+              <p className="text-gray-600 line-clamp-3 mb-4">{item.description}</p>
+              <div className="mt-auto pt-4 border-t border-gray-100">
+                <p className="text-sm text-gray-500">
+                  <span className="font-bold text-brand-charcoal">{item.metric}:</span> {item.impact}
+                </p>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </SectionWrapper>

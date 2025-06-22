@@ -35,9 +35,6 @@ const WhyChooseMeSection: React.FC<Pick<SectionWrapperProps, 'id'>> = ({ id }) =
            <div className="absolute -top-4 -left-4 w-1/3 h-1/3 bg-brand-green-tint-medium/40 rounded-full -z-10 transition-all duration-500 group-hover:scale-110"></div>
         </div>
         <div className="order-first md:order-last">
-          <h3 className="text-2xl md:text-3xl font-bold text-brand-charcoal mb-6">
-            <span className="text-brand-emerald">What Sets Me Apart</span>
-          </h3>
           {/* Differentiators now in a single container card with dividers */}
           <ul className="bg-brand-card-bg rounded-2xl shadow-soft-md border border-black/5 p-6 md:p-8 space-y-0">
             {DIFFERENTIATORS.map((item: Differentiator, index: number) => {

@@ -35,6 +35,9 @@ export interface PortfolioItem {
   imageUrl: string;
   imageAlt: string;
   isFeatured?: boolean;
+  tags: string[];
+  liveUrl: string;
+  caseStudyUrl: string;
 }
 
 export interface Differentiator {

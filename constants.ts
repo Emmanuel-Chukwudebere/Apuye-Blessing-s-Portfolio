@@ -12,7 +12,7 @@ import whyChooseMe from './assets/why-choose-me.png';
 export const HEADER_LOGO_TEXT = "Apuye Blessing";
 export const FOOTER_LOGO_TEXT = "Apuye Blessing";
 export const HEADER_RESUME_TEXT = "View My Resume";
-export const HEADER_RESUME_LINK = "/apuye_blessing_resume_placeholder.pdf"; // Placeholder path
+export const HEADER_RESUME_LINK = "/resume";
 
 // --- HERO SECTION ---
 export const HERO_VISUAL_URL = apuyePortrait; // Local portrait image
@@ -34,7 +34,7 @@ export const NAV_LINKS: NavLink[] = [
   { id: 'portfolio', label: 'Portfolio' },
   { id: 'contact', label: 'Contact' },
 ];
-export const HEADER_CTA_TEXT = "Let's Talk";
+export const HEADER_CTA_TEXT = "Hire Me";
 
 // --- ABOUT ME SECTION ---
 export const ABOUT_VISUAL_URL = aboutImage; // Local about section image
@@ -55,7 +55,7 @@ export const SERVICES_DATA: Service[] = [
     title: 'Customer Support & Compliance',
     description: "Deliver exceptional customer service while maintaining strict compliance standards.",
     impact: "Proven track record of managing 50+ daily customer interactions with 100% compliance.",
-    icon: 'ShieldCheckIcon',
+    icon: 'ShieldCheckIcon', 
     imageUrl: "",
     imageAlt: "",
     isFeatured: true,
@@ -95,35 +95,44 @@ export const PORTFOLIO_SUBTITLE = "Real outcomes from dedicated customer service
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
-    id: 'risk-success',
-    category: 'Customer Support',
-    title: 'Customer Support Excellence',
-    description: "Managed high-volume customer interactions while maintaining exceptional service quality and compliance standards.",
+    id: 'risk-management',
+    category: 'Risk Management',
+    title: 'Strategic Risk Management & Compliance',
+    description: "Analyzed complex customer portfolios, implemented strategic solutions, and ensured 100% regulatory compliance for a financial services company. Developed SOPs that improved customer experience by 25%.",
     metric: "100% Compliance",
-    impact: "Successfully handled over 50 daily customer cases with flawless compliance.",
-    imageUrl: complianceSuccess, // Local compliance success image
-    imageAlt: 'Customer support and compliance dashboard showing 100% success rate',
+    impact: "Ensured 100% regulatory compliance and improved customer experience by 25%.",
+    imageUrl: complianceSuccess,
+    imageAlt: 'A graphic representing compliance and success',
     isFeatured: true,
+    tags: ["Risk Analysis", "Regulatory Compliance", "Process Improvement", "CRM"],
+    liveUrl: "#",
+    caseStudyUrl: "/portfolio/risk-management",
+  },
+  {
+    id: 'logistics-coordination',
+    category: 'Logistics & Operations',
+    title: 'End-to-End Logistics & Cost Optimization',
+    description: "Managed complete order fulfillment, achieving 95%+ on-time delivery. Optimized inventory systems, reducing customer complaints by 30%, and identified cost-saving opportunities of over ₦200,000 monthly.",
+    metric: "₦200,000+ Saved",
+    impact: "Reduced customer complaints by 30% and achieved significant monthly savings.",
+    imageUrl: costOptimisation,
+    imageAlt: 'A graphic representing cost optimisation',
+    tags: ["Logistics", "Inventory Management", "Cost Reduction", "Supplier Coordination"],
+    liveUrl: "#",
+    caseStudyUrl: "/portfolio/logistics-coordination",
   },
   {
     id: 'cx-transformation',
     category: 'Customer Experience',
     title: 'Customer Experience Transformation',
-    description: "Redesigned customer service protocols and processes to significantly improve satisfaction rates.",
-    metric: "70% → 95% CSAT",
-    impact: "Improved customer satisfaction from 70% to 95% through systematic improvements.",
-    imageUrl: cxTransformation, // Local CX transformation image
-    imageAlt: 'Customer satisfaction improvement metrics and interface',
-  },
-  {
-    id: 'cost-optimization',
-    category: 'Operations',
-    title: 'Cost Optimization Results',
-    description: "Conducted comprehensive operational analysis to identify and implement major cost-saving measures.",
-    metric: "₦200,000+ Saved Monthly",
-    impact: "Identified and implemented cost savings worth over ₦200,000 monthly.",
-    imageUrl: costOptimisation, // Local cost optimization image
-    imageAlt: 'Cost optimization analysis and financial savings charts',
+    description: "Revamped customer support processes by implementing new CRM strategies and communication workflows, resulting in a 40% improvement in customer satisfaction scores and faster issue resolution times.",
+    metric: "40% CSAT Rise",
+    impact: "Boosted customer satisfaction and streamlined support workflows.",
+    imageUrl: cxTransformation,
+    imageAlt: 'A graphic representing customer experience transformation',
+    tags: ["CX Strategy", "CRM", "Customer Support", "Process Optimization"],
+    liveUrl: "#",
+    caseStudyUrl: "/portfolio/cx-transformation",
   }
 ];
 
@@ -187,3 +196,104 @@ export const SOCIAL_LINKS: ContactLink[] = [
     { type: 'whatsapp', href: WHATSAPP_LINK, text: 'WhatsApp', ariaLabel: 'Send Apuye Blessing a WhatsApp message', icon: 'WhatsAppIcon' },
     { type: 'linkedin', href: LINKEDIN_PROFILE_URL, text: 'LinkedIn', ariaLabel: 'View Apuye Blessing on LinkedIn', icon: 'LinkedInIcon' }
 ];
+
+export const personalInfo = {
+    name: "Apuye Blessing",
+    title: "Virtual Assistant",
+    location: "Benin City, Nigeria",
+    phone: "09169301646",
+    email: "apuyeamorye@gmail.com",
+    linkedin: "https://www.linkedin.com/in/apuyeamorye",
+};
+
+export const professionalSummary = "Certified Virtual Assistant with hands-on training in CRM systems, digital communication platforms, and remote customer support. Proven track record in risk management and logistics coordination with 95%+ customer satisfaction rates. Specializes in problem resolution, process optimization, and maintaining exceptional service standards in fast-paced environments. Ready to leverage analytical skills and customer service expertise to support business operations remotely.";
+
+export const experiences = [
+    {
+        role: "Risk Management Specialist",
+        company: "Gamma Loans, Calabar",
+        period: "JANUARY 2025 - PRESENT",
+        responsibilities: [
+            "Analyze complex customer portfolios and implement strategic solutions for 50+ daily cases",
+            "Collaborate with cross-functional teams to ensure 100% regulatory compliance",
+            "Develop standard operating procedures that improved customer experience by 25%",
+            "Manage sensitive customer data with strict confidentiality protocols",
+            "Utilize CRM systems for case tracking and resolution documentation",
+        ],
+    },
+    {
+        role: "Logistics Manager",
+        company: "Debbie's Fashion House, Benin City",
+        period: "JANUARY 2024 - MARCH 2025",
+        responsibilities: [
+            "Managed end-to-end customer order fulfillment achieving 95%+ on-time delivery",
+            "Coordinated with suppliers, vendors, and internal teams to resolve customer issues within 24 hours",
+            "Implemented inventory management systems reducing customer complaints by 30%",
+            "Analyzed operational data to identify cost-saving opportunities worth ₦200,000+ monthly",
+            "Maintained detailed records and reports for management review",
+        ],
+    },
+];
+
+export const education = [
+    {
+        degree: "Virtual Assistant Professional Training",
+        institution: "ALX Africa",
+        period: "APRIL 2025 - JUNE 2025",
+        details: [
+            "Customer Relationship Management (CRM) Systems Training",
+            "Digital Communication Tools & Remote Support Platforms",
+            "Advanced Problem Resolution & Customer Escalation Techniques",
+            "Client Relationship Development & Retention Strategies",
+            "Remote Work Best Practices & Professional Communication",
+        ],
+    },
+    {
+        degree: "Bachelor of Arts in History and International Studies",
+        institution: "University of Calabar, Calabar, Nigeria",
+        period: "FEBRUARY 2019 - AUGUST 2024",
+        details: [
+            "Relevant Coursework: Global Communication, Research Methods, International Relations",
+            "Developed analytical thinking and cross-cultural communication skills",
+            "Completed research projects requiring data analysis and presentation skills",
+        ],
+    },
+];
+
+export const skills = {
+    "Virtual Assistant Skills": [
+        "Customer Relationship Management (CRM) Systems",
+        "Email Management & Digital Communication",
+        "Calendar Scheduling & Appointment Setting",
+        "Data Entry & Database Management",
+        "Remote Customer Support & Live Chat",
+        "Problem Resolution & Escalation Management",
+    ],
+    "Technical Proficiencies": [
+        "Microsoft Office Suite (Word, Excel, PowerPoint)",
+        "Google Workspace (Docs, Sheets, Forms, Calendar)",
+        "Video Conferencing Tools (Zoom, Teams, Meet)",
+        "Digital Communication Platforms",
+        "Basic Social Media Management",
+        "Customer Support Ticketing Systems",
+    ],
+    "Professional Skills": [
+        "Project Coordination & Process Optimization",
+        "Risk Assessment & Compliance Management",
+        "Inventory Management & Order Fulfillment",
+        "Multi-stakeholder Communication",
+        "Time Management & Prioritization",
+        "Cross-functional Team Collaboration",
+    ],
+};
+
+export const languages = ["English Language (Fluent)", "ASL (Fluent)"];
+
+export const availability = [
+    "Full-time and Part-time positions",
+    "Flexible scheduling including US/EU business hours",
+    "Immediate availability for interviews and onboarding",
+    "Open to short-term projects and long-term commitments",
+];
+
+export const references = "Available upon request";
