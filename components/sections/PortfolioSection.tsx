@@ -20,7 +20,7 @@ const PortfolioSection: React.FC = () => {
           <Link
             to={`/portfolio/${item.id}`}
             key={item.id}
-            className="group bg-brand-card-bg rounded-3xl p-0 shadow-soft-lg hover:shadow-lift transition-all duration-300 transform hover:-translate-y-2 hover:scale-103 relative overflow-hidden border border-black/5"
+            className="group bg-brand-card-bg rounded-3xl p-0 shadow-soft-lg hover:shadow-lift transition-all duration-300 transform hover:-translate-y-2 hover:scale-103 relative overflow-hidden border border-black/5 flex flex-col h-full"
           >
             <div className="relative">
               <img
@@ -33,7 +33,7 @@ const PortfolioSection: React.FC = () => {
                 <Launch className="w-5 h-5" />
               </div>
             </div>
-            <div className="p-6 flex flex-col h-full">
+            <div className="p-6 flex flex-col flex-1">
               <div className="mb-3">
                 <Tag text={item.category} className="bg-brand-emerald/10 text-brand-emerald font-semibold" />
               </div>
