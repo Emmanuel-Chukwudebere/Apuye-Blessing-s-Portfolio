@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { SectionWrapperProps } from '../types';
 
@@ -12,7 +11,7 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({
   accentColorClassName = 'text-brand-emerald', 
   subtitle,
   subtitleClassName = 'text-md sm:text-lg text-gray-700 text-center max-w-3xl mx-auto', // Adjusted font sizes
-  containerClassName = 'container mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24', // Default padding can be overridden
+  containerClassName = 'container mx-auto max-w-7xl px-5 md:px-30 py-16 md:py-24', // Updated: 20px mobile, 120px desktop
   hasPattern = false,
 }) => {
   

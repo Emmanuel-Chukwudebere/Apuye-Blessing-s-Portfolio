@@ -1,29 +1,28 @@
 import * as React from 'react';
-import {
-  Checkmark24Regular,
-  Mail24Regular,
-  LineHorizontal324Regular,
-  Dismiss24Regular,
-  Briefcase24Regular,
-  AcademicCap24Regular,
-  Lightbulb24Regular,
-  Sparkle24Regular,
-  HandRaise24Regular,
-  ShieldCheckmark24Regular,
-  BarChart24Regular,
-  Settings24Regular,
-  Globe24Regular,
-  ChevronRight24Regular,
-  Clock24Regular,
-  Star24Regular,
-  Star24Filled
-} from '@fluentui/react-icons';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import EmailIconMUI from '@mui/icons-material/Email';
+import LinkedInIconMUI from '@mui/icons-material/LinkedIn';
+import MenuIconMUI from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
+import LightbulbIconMUI from '@mui/icons-material/Lightbulb';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import PanToolAltIcon from '@mui/icons-material/PanToolAlt';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import SettingsIcon from '@mui/icons-material/Settings';
+import PublicIcon from '@mui/icons-material/Public';
+import ChevronRightIconMUI from '@mui/icons-material/ChevronRight';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import StarIconMUI from '@mui/icons-material/Star';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 // Icons updated for a more solid/filled or cleaner modern look (Fluent-like approximation)
 // Color will be inherited via `currentColor`
 
 export const CheckIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Checkmark24Regular className={className} />
+  <CheckCircleIcon className={className} />
 );
 
 export const WhatsAppIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
@@ -33,67 +32,69 @@ export const WhatsAppIcon: React.FC<{ className?: string }> = ({ className = "w-
 );
 
 export const EmailIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Mail24Regular className={className} />
+  <EmailIconMUI className={className} />
 );
 
 export const LinkedInIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-  </svg>
+  typeof LinkedInIconMUI !== 'undefined' ? <LinkedInIconMUI className={className} /> : (
+    <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+    </svg>
+  )
 );
 
 export const MenuIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <LineHorizontal324Regular className={className} />
+  <MenuIconMUI className={className} />
 );
 
 export const XIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Dismiss24Regular className={className} />
+  <CloseIcon className={className} />
 );
 
 export const BriefcaseIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Briefcase24Regular className={className} />
+  <WorkIcon className={className} />
 );
 
 export const AcademicCapIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <AcademicCap24Regular className={className} />
+  <SchoolIcon className={className} />
 );
 
 export const LightbulbIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Lightbulb24Regular className={className} />
+  <LightbulbIconMUI className={className} />
 );
 
 export const SparklesIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Sparkle24Regular className={className} />
+  <AutoAwesomeIcon className={className} />
 );
 
 export const HandRaisedIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <HandRaise24Regular className={className} />
+  <PanToolAltIcon className={className} />
 );
 
 export const ShieldCheckIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <ShieldCheckmark24Regular className={className} />
+  <VerifiedUserIcon className={className} />
 );
 
 export const ChartBarIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <BarChart24Regular className={className} />
+  <BarChartIcon className={className} />
 );
 
 export const CogIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Settings24Regular className={className} />
+  <SettingsIcon className={className} />
 );
 
 export const GlobeAltIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Globe24Regular className={className} />
+  <PublicIcon className={className} />
 );
 
 export const ChevronRightIcon: React.FC<{ className?: string }> = ({ className = "w-5 h-5" }) => (
-  <ChevronRight24Regular className={className} />
+  <ChevronRightIconMUI className={className} />
 );
 
 export const ClockIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
-  <Clock24Regular className={className} />
+  <AccessTimeIcon className={className} />
 );
 
 export const StarIcon: React.FC<{ className?: string, filled?: boolean }> = ({ className = "w-5 h-5", filled = true }) => (
-  filled ? <Star24Filled className={className} /> : <Star24Regular className={className} />
+  filled ? <StarIconMUI className={className} /> : <StarBorderIcon className={className} />
 );

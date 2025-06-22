@@ -1,0 +1,51 @@
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Portfolio section specific styles */
+.portfolio-tag {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: fit-content;
+}
+
+/* Ensure Material UI icons inherit text color */
+.MuiSvgIcon-root {
+  color: inherit;
+}
+
+/* Line clamp utilities */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Prose styles */
+.prose {
+  line-height: 1.75;
+}
+
+.prose-lg {
+  line-height: 1.8;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em;
+} 

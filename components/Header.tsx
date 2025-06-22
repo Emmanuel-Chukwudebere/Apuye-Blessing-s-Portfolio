@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { NAV_LINKS, HEADER_CTA_TEXT, HEADER_LOGO_TEXT, HEADER_RESUME_LINK, HEADER_RESUME_TEXT } from '../constants';
 import Button from './Button';
 import { MenuIcon, XIcon } from './Icons'; 
@@ -20,9 +20,9 @@ const Header: React.FC = () => {
   return (
     <>
       <header 
-        className="fixed top-4 inset-x-0 z-50 mx-auto max-w-7xl px-5 md:px-0" // Header bar constrained and centered
+        className="fixed top-4 inset-x-0 z-50 mx-auto max-w-7xl px-5 md:px-30" // Updated: 20px mobile, 120px desktop
       >
-        <div className="flex items-center justify-between h-16 sm:h-18 bg-white/85 backdrop-blur-lg rounded-full shadow-soft-lg border border-white/20 px-6 md:px-8">
+        <div className="flex items-center justify-between h-20 sm:h-22 bg-white/85 backdrop-blur-lg rounded-full shadow-soft-lg border border-white/20 px-6 md:px-8">
           <a href="#hero" className="text-xl md:text-2xl font-semibold text-brand-emerald hover:opacity-80 transition-opacity" onClick={closeMobileMenu}>
             {HEADER_LOGO_TEXT}
           </a>
@@ -40,19 +40,18 @@ const Header: React.FC = () => {
             ))}
           </nav>
           
-          <div className="hidden lg:flex items-center">
+          <div className="hidden lg:flex items-center space-x-3">
             <Button 
               href={contactLink ? `#${contactLink.id}` : '#contact'} 
               variant="primary" 
-              size="medium"
-              className="mr-3" // Added margin for spacing
+              size="small"
             >
               {HEADER_CTA_TEXT}
             </Button>
             <Button 
                 href={HEADER_RESUME_LINK} 
                 variant="secondary" 
-                size="medium"      
+                size="small"      
                 target="_blank"
              >
                 {HEADER_RESUME_TEXT}
@@ -77,7 +76,7 @@ const Header: React.FC = () => {
             onClick={closeMobileMenu}
         >
             <div 
-                className="fixed top-24 left-4 right-4 bg-white rounded-3xl shadow-2xl p-6 transform transition-all duration-300 ease-out origin-top border border-gray-200"
+                className="fixed top-32 left-4 right-4 bg-white rounded-3xl shadow-2xl p-6 transform transition-all duration-300 ease-out origin-top border border-gray-200"
                 onClick={(e) => e.stopPropagation()} 
             >
               <nav className="flex flex-col items-center space-y-3"> {/* Reduced space-y-4 to space-y-3 */}

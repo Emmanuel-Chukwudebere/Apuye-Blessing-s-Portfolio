@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import SectionWrapper from '../SectionWrapper';
 import { DIFFERENTIATORS, WHYCHOOSEME_VISUAL_URL, WHYCHOOSEME_TITLE, WHYCHOOSEME_SUBTITLE } from '../../constants';
@@ -23,8 +22,9 @@ const WhyChooseMeSection: React.FC<Pick<SectionWrapperProps, 'id'>> = ({ id }) =
         title={WHYCHOOSEME_TITLE}
         subtitle={WHYCHOOSEME_SUBTITLE}
         className="bg-gradient-to-b from-brand-page-bg to-brand-card-bg/50" 
+        containerClassName="container mx-auto max-w-7xl px-5 md:px-30 py-12 md:py-20"
     >
-      <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="relative group order-last md:order-first">
           <img 
             src={WHYCHOOSEME_VISUAL_URL} 
@@ -35,8 +35,8 @@ const WhyChooseMeSection: React.FC<Pick<SectionWrapperProps, 'id'>> = ({ id }) =
            <div className="absolute -top-4 -left-4 w-1/3 h-1/3 bg-brand-green-tint-medium/40 rounded-full -z-10 transition-all duration-500 group-hover:scale-110"></div>
         </div>
         <div className="order-first md:order-last">
-          <h3 className="text-2xl md:text-3xl font-bold text-brand-charcoal mb-8">
-            Key <span className="text-brand-emerald">Differentiators</span>:
+          <h3 className="text-2xl md:text-3xl font-bold text-brand-charcoal mb-6">
+            <span className="text-brand-emerald">What Sets Me Apart</span>
           </h3>
           {/* Differentiators now in a single container card with dividers */}
           <ul className="bg-brand-card-bg rounded-2xl shadow-soft-md border border-black/5 p-6 md:p-8 space-y-0">

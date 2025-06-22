@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import SectionWrapper from '../SectionWrapper';
 import { PORTFOLIO_ITEMS, PORTFOLIO_TITLE_ACCENT, PORTFOLIO_SUBTITLE } from '../../constants';
@@ -36,16 +35,16 @@ const PortfolioSection: React.FC<Pick<SectionWrapperProps, 'id'>> = ({ id }) => 
             </div>
             
             <div className="p-6 md:p-8 flex-grow flex flex-col">
-              {/* Tag div uses inline-block, correctly hugs content */}
-              <div className="inline-block bg-brand-green-tint-light text-brand-emerald border border-brand-emerald px-3 py-1.5 rounded-full text-xs font-semibold mb-4 uppercase tracking-wider"> {/* Updated border color */}
+              {/* Tag div with improved styling to hug content */}
+              <div className="portfolio-tag bg-brand-green-tint-light text-brand-emerald border border-brand-emerald px-3 py-1.5 rounded-full text-xs font-semibold mb-4 uppercase tracking-wider w-fit">
                 {item.category}
               </div>
               
               <h3 className="text-lg md:text-xl font-bold text-brand-charcoal mb-3">{item.title}</h3>
               <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-5 line-clamp-3 md:line-clamp-4 flex-grow">{item.description}</p>
               
-              {/* Metric Box - Visual styling removed from this div */}
-              <div className="mt-auto pt-2"> {/* Added pt-2 for spacing after removing container padding */}
+              {/* Metric Box */}
+              <div className="mt-auto pt-2">
                 <div className="text-xl md:text-2xl font-bold text-brand-emerald mb-1">{item.metric}</div>
                 <div className="text-gray-600 text-xs leading-snug">{item.impact}</div>
               </div>

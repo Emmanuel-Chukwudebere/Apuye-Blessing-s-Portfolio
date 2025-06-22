@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import SectionWrapper from '../SectionWrapper';
 import Button from '../Button';
@@ -20,7 +19,7 @@ const HeroSection: React.FC<Pick<SectionWrapperProps, 'id'>> = ({ id }) => {
     <SectionWrapper 
       id={id} 
       className="bg-gradient-to-br from-brand-green-tint-light/30 to-brand-page-bg min-h-screen flex items-center !pt-28 md:!pt-36" 
-      containerClassName="container mx-auto max-w-7xl px-5 md:px-8 py-12 md:py-16" 
+      containerClassName="container mx-auto max-w-7xl px-5 md:px-30 py-12 md:py-16" 
       hasPattern="hero-grid"
     >
       <div className="grid lg:grid-cols-5 gap-12 items-center">

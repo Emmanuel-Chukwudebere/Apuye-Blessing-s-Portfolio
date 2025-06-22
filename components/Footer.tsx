@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { SOCIAL_LINKS, FOOTER_COPYRIGHT_NAME, FOOTER_TAGLINE, NAV_LINKS, FOOTER_LOGO_TEXT } from '../constants';
 import { EmailIcon, WhatsAppIcon, LinkedInIcon } from './Icons'; 
@@ -13,7 +12,7 @@ const iconComponentsMap: { [key: string]: React.FC<{ className?: string }> } = {
 const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-page-bg text-brand-charcoal border-t border-black/5">
-      <div className="container mx-auto max-w-7xl px-5 md:px-8 py-10 md:py-16">
+      <div className="container mx-auto max-w-7xl px-5 md:px-30 py-10 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
           
           <div>
@@ -37,7 +36,7 @@ const Footer: React.FC = () => {
             ))}
           </nav>
 
-          <div className="flex space-x-5 justify-center md:justify-end">
+          <div className="flex items-center justify-center md:justify-end space-x-5">
             {SOCIAL_LINKS.map((link: ContactLink) => {
                 const IconComponent = link.icon && typeof link.icon === 'string' ? iconComponentsMap[link.icon] : null;
                 return (
@@ -47,7 +46,7 @@ const Footer: React.FC = () => {
                         target="_blank" 
                         rel="noopener noreferrer" 
                         aria-label={link.ariaLabel}
-                        className="text-gray-500 hover:text-brand-emerald transition-colors duration-300"
+                        className="flex items-center justify-center text-gray-500 hover:text-brand-emerald transition-colors duration-300"
                     >
                         {IconComponent ? <IconComponent className="w-5 h-5" /> : link.text}
                     </a>

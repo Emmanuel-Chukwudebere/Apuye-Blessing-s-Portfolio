@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { ButtonProps } from '../types';
 
@@ -19,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   // Softer base shadow applied here, variants can override or add more
   const baseStyles = `inline-flex items-center justify-center font-semibold rounded-full shadow-soft-md hover:shadow-soft-lg focus:outline-none focus:ring-4 transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95`;
   
-  const iconBaseClass = "inline-block";
+  const iconBaseClass = "inline-block flex-shrink-0 flex items-center justify-center";
   const iconSizeStyles = {
     small: "w-4 h-4",
     medium: "w-5 h-5",
@@ -28,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const sizeStyles = {
-    small: "px-6 py-2.5 text-sm", // Adjusted for better header fit
+    small: "px-4 py-2 text-sm", // Reduced padding for better header fit
     medium: "px-8 py-3.5 text-base", // Slightly more padding
     large: "px-10 py-4 text-lg",
     xlarge: "px-12 py-5 text-xl"
