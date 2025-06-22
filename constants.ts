@@ -107,6 +107,57 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     tags: ["Risk Analysis", "Regulatory Compliance", "Process Improvement", "CRM"],
     liveUrl: "#",
     caseStudyUrl: "/portfolio/risk-management",
+    caseStudy: {
+      client: "Gamma Loans, Calabar",
+      timeline: "Jan 2025 - Present",
+      projectType: "Risk & Compliance Operations",
+      objective: "Deliver strategic risk management and ensure 100% regulatory compliance for customer portfolios.",
+      challenge: {
+        title: "Complex Portfolio Risk & Compliance",
+        subtitle: "Managing high-volume, high-risk customer portfolios with strict compliance needs.",
+        details: [
+          "50+ daily customer cases with complex risk profiles.",
+          "Need for strict regulatory compliance and data confidentiality.",
+          "Lack of standardized procedures impacting customer experience."
+        ]
+      },
+      solution: {
+        title: "Strategic Risk Management & SOPs",
+        subtitle: "Implemented new SOPs and cross-team collaboration for compliance.",
+        details: [
+          "Implemented strategic solutions for portfolio risk.",
+          "Developed SOPs that improved customer experience by 25%.",
+          "Collaborated with cross-functional teams for 100% compliance.",
+          "Utilized CRM for case tracking and resolution documentation."
+        ]
+      },
+      implementation: [
+        "Discovery & Analysis",
+        "SOP Development",
+        "Team Training",
+        "Compliance Rollout"
+      ],
+      skills: [
+        "Risk Management", "CRM Systems", "Process Optimization", "Regulatory Compliance", "Data Confidentiality"
+      ],
+      results: [
+        {
+          metric: "100% Compliance",
+          description: "Achieved flawless regulatory compliance across all cases.",
+          icon: "BarChart"
+        },
+        {
+          metric: "25% CX Improvement",
+          description: "Customer experience improved by 25% through SOPs.",
+          icon: "AutoAwesome"
+        }
+      ],
+      testimonial: {
+        quote: "Blessing's risk management expertise transformed our compliance process. Her SOPs and attention to detail made a measurable difference.",
+        author: "Compliance Lead, Gamma Loans",
+        position: "Risk & Compliance Department"
+      }
+    }
   },
   {
     id: 'logistics-coordination',
@@ -120,6 +171,62 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     tags: ["Logistics", "Inventory Management", "Cost Reduction", "Supplier Coordination"],
     liveUrl: "#",
     caseStudyUrl: "/portfolio/logistics-coordination",
+    caseStudy: {
+      client: "Debbie's Fashion House, Benin City",
+      timeline: "Jan 2024 - Mar 2025",
+      projectType: "Logistics & Cost Optimization",
+      objective: "Achieve 95%+ on-time delivery and reduce operational costs through inventory optimization.",
+      challenge: {
+        title: "Order Fulfillment & Cost Control",
+        subtitle: "Managing high-volume orders and reducing operational costs.",
+        details: [
+          "High volume of customer orders with 95%+ on-time delivery target.",
+          "Frequent customer issues and complaints.",
+          "Need to reduce operational costs and improve inventory management."
+        ]
+      },
+      solution: {
+        title: "Inventory Optimization & Fast Issue Resolution",
+        subtitle: "Implemented inventory systems and rapid response workflows.",
+        details: [
+          "Implemented inventory management systems, reducing complaints by 30%.",
+          "Coordinated with suppliers, vendors, and teams to resolve issues within 24 hours.",
+          "Analyzed data to identify ₦200,000+ monthly cost savings.",
+          "Maintained detailed records for management review."
+        ]
+      },
+      implementation: [
+        "Process Audit",
+        "Inventory System Setup",
+        "Team Coordination",
+        "Cost Optimization Rollout"
+      ],
+      skills: [
+        "Logistics Management", "Inventory Optimization", "Supplier Coordination", "Data Analysis", "Customer Service"
+      ],
+      results: [
+        {
+          metric: "95%+ On-Time Delivery",
+          description: "Achieved 95%+ on-time order fulfillment.",
+          icon: "BarChart"
+        },
+        {
+          metric: "₦200,000+ Saved",
+          description: "Identified and implemented significant monthly cost savings.",
+          icon: "Lightbulb"
+        },
+        {
+          metric: "30% Fewer Complaints",
+          description: "Customer complaints reduced by 30% through better inventory management.",
+          icon: "AutoAwesome"
+        }
+      ],
+      testimonial: {
+        quote: "Apuye streamlined our logistics and saved us significant costs. Her inventory system and quick response to issues made a huge difference.",
+        author: "Debbie O.",
+        position: "Owner, Debbie's Fashion House"
+      }
+    }
   },
   {
     id: 'cx-transformation',
@@ -133,6 +240,57 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     tags: ["CX Strategy", "CRM", "Customer Support", "Process Optimization"],
     liveUrl: "#",
     caseStudyUrl: "/portfolio/cx-transformation",
+    caseStudy: {
+      client: "ShopEase Nigeria",
+      timeline: "3 Months",
+      projectType: "Business Operations Overhaul",
+      objective: "Transform customer service operations and expand market reach through ASL accessibility.",
+      challenge: {
+        title: "Low Customer Satisfaction & Slow Response",
+        subtitle: "Multiple operational inefficiencies threatening business growth.",
+        details: [
+          "60% customer satisfaction due to slow, inconsistent responses.",
+          "High volume of complaints overwhelming support team.",
+          "No standardized process for inquiries, hurting brand reputation."
+        ]
+      },
+      solution: {
+        title: "CX Transformation & CRM Workflows",
+        subtitle: "Redesigned protocols and implemented CRM workflows.",
+        details: [
+          "Redesigned protocols with ASL accessibility for new market segment.",
+          "Standardized response templates for speed and consistency.",
+          "Developed training for support team on new tools and protocols.",
+          "Implemented satisfaction tracking for continuous improvement."
+        ]
+      },
+      implementation: [
+        "Discovery & Analysis",
+        "System Design",
+        "Team Training",
+        "Launch & Optimization"
+      ],
+      skills: [
+        "Customer Service", "CRM Systems", "ASL Communication", "Process Improvement", "Project Coordination"
+      ],
+      results: [
+        {
+          metric: "95% CSAT",
+          description: "Customer satisfaction rose from 60% to 95% in two months.",
+          icon: "BarChart"
+        },
+        {
+          metric: "50% Faster Response",
+          description: "Response times cut in half with new workflows.",
+          icon: "AutoAwesome"
+        }
+      ],
+      testimonial: {
+        quote: "Blessing transformed our entire customer service operation. The ASL accessibility feature alone opened up a completely new market for us. Her systematic approach and attention to detail delivered results beyond our expectations.",
+        author: "Chidi Okafor",
+        position: "Founder, ShopEase Nigeria"
+      }
+    }
   }
 ];
 

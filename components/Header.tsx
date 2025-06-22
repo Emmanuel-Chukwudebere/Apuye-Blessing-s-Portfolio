@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { NAV_LINKS, HEADER_CTA_TEXT, HEADER_LOGO_TEXT, HEADER_RESUME_LINK, HEADER_RESUME_TEXT } from '../constants';
+import { NAV_LINKS, HEADER_CTA_TEXT, HEADER_LOGO_TEXT, HEADER_RESUME_TEXT } from '../constants';
 import Button from './Button';
 import { MenuIcon, XIcon } from './Icons'; 
 
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
               {HEADER_CTA_TEXT}
             </Button>
             <a 
-              href="https://drive.google.com/your-resume-link" 
+              href="https://drive.google.com/file/d/1HYVLMPPxSeLEC2XI7Sz-ovmEDNrASLXf/view?usp=drivesdk" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
                   </a>
                 ))}
                 <a 
-                  href="https://drive.google.com/your-resume-link" 
+                  href="https://drive.google.com/file/d/1HYVLMPPxSeLEC2XI7Sz-ovmEDNrASLXf/view?usp=drivesdk" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="w-full"

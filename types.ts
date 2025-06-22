@@ -25,6 +25,35 @@ export interface Service {
   isFeatured?: boolean;
 }
 
+export interface CaseStudy {
+  client: string;
+  timeline: string;
+  projectType?: string;
+  objective?: string;
+  challenge: {
+    title: string;
+    subtitle?: string;
+    details: string[];
+  };
+  solution: {
+    title: string;
+    subtitle?: string;
+    details: string[];
+  };
+  implementation?: string[];
+  skills: string[];
+  results: Array<{
+    metric: string;
+    description: string;
+    icon: string;
+  }>;
+  testimonial?: {
+    quote: string;
+    author: string;
+    position: string;
+  };
+}
+
 export interface PortfolioItem {
   id: string;
   category: string;
@@ -38,6 +67,7 @@ export interface PortfolioItem {
   tags: string[];
   liveUrl: string;
   caseStudyUrl: string;
+  caseStudy?: CaseStudy;
 }
 
 export interface Differentiator {
