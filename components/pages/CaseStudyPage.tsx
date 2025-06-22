@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link, useLocation, useNavigate } from 'react-router-dom';
 import { PORTFOLIO_ITEMS } from '../../constants';
 import SectionWrapper from '../SectionWrapper';
 import { BulletPoint, KeyMetric, SectionHeader, Tag, TagGroup } from '../common';
@@ -211,18 +211,36 @@ const CaseStudyPage: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
           <p className="text-lg mb-6 opacity-90">Let's discuss how I can deliver similar results for your organization</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#contact" 
+            <Link
+              to="/"
               className="bg-white text-brand-emerald px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+              onClick={e => {
+                e.preventDefault();
+                if (window.location.pathname !== '/') {
+                  window.location.href = '/#contact';
+                } else {
+                  const el = document.getElementById('contact');
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
             >
               Start Your Project
-            </a>
-            <a 
-              href="#portfolio" 
+            </Link>
+            <Link
+              to="/"
               className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-brand-emerald transition-colors inline-flex items-center justify-center"
+              onClick={e => {
+                e.preventDefault();
+                if (window.location.pathname !== '/') {
+                  window.location.href = '/#portfolio';
+                } else {
+                  const el = document.getElementById('portfolio');
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
             >
               View More Cases
-            </a>
+            </Link>
           </div>
         </div>
 
