@@ -154,7 +154,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       ],
       testimonial: {
         quote: "Blessing's risk management expertise transformed our compliance process. Her SOPs and attention to detail made a measurable difference.",
-        author: "Compliance Lead, Gamma Loans",
+        author: "Gamma Loans, Calabar",
         position: "Risk & Compliance Department"
       }
     }
@@ -223,7 +223,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       ],
       testimonial: {
         quote: "Apuye streamlined our logistics and saved us significant costs. Her inventory system and quick response to issues made a huge difference.",
-        author: "Debbie O.",
+        author: "Debbie's Fashion House, Benin City",
         position: "Owner, Debbie's Fashion House"
       }
     }
@@ -241,7 +241,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     liveUrl: "#",
     caseStudyUrl: "/portfolio/cx-transformation",
     caseStudy: {
-      client: "ShopEase Nigeria",
+      client: "Apuye's Phamaceutical",
       timeline: "3 Months",
       projectType: "Business Operations Overhaul",
       objective: "Transform customer service operations and expand market reach through ASL accessibility.",
@@ -287,8 +287,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       ],
       testimonial: {
         quote: "Blessing transformed our entire customer service operation. The ASL accessibility feature alone opened up a completely new market for us. Her systematic approach and attention to detail delivered results beyond our expectations.",
-        author: "Chidi Okafor",
-        position: "Founder, ShopEase Nigeria"
+        author: "Apuye's Phamaceutical",
+        position: "Founder, Apuye's Phamaceutical"
       }
     }
   }
