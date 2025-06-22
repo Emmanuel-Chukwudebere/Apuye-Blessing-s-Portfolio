@@ -21,10 +21,18 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Apuye Blessing - Virtual Assistant & Customer Support Specialist | Nigeria">
     <meta property="og:description" content="Professional Virtual Assistant and Customer Support Specialist from Nigeria. Transform your business operations with proven expertise in customer experience enhancement and operational excellence.">
+    
+    <!-- Facebook Open Graph Image (1200x630) -->
     <meta property="og:image" content="">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Apuye Blessing - Virtual Assistant & Customer Support Specialist from Nigeria">
+    
+    <!-- LinkedIn Open Graph Image (1200x627) -->
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+    
     <meta property="og:url" content="https://apuyeblessing.vercel.app">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Apuye Blessing Portfolio">
@@ -35,6 +43,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Apuye Blessing - Virtual Assistant & Customer Support Specialist | Nigeria">
     <meta name="twitter:description" content="Professional Virtual Assistant and Customer Support Specialist from Nigeria. Available for freelance, part-time, and full-time opportunities.">
+    <!-- Twitter Image (1200x675) -->
     <meta name="twitter:image" content="">
     <meta name="twitter:image:alt" content="Apuye Blessing - Virtual Assistant & Customer Support Specialist from Nigeria">
 
@@ -79,11 +88,11 @@
       appleLink.href = aboutImage;
       document.head.appendChild(appleLink);
 
-      // Set Open Graph image
-      const ogImageMeta = document.querySelector('meta[property="og:image"]');
-      if (ogImageMeta) {
-        ogImageMeta.setAttribute('content', aboutImage);
-      }
+      // Set Open Graph images for different platforms
+      const ogImageMetas = document.querySelectorAll('meta[property="og:image"]');
+      ogImageMetas.forEach(meta => {
+        meta.setAttribute('content', aboutImage);
+      });
 
       // Set Twitter image
       const twitterImageMeta = document.querySelector('meta[name="twitter:image"]');
