@@ -25,7 +25,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Apuye Blessing - Virtual Assistant & Customer Support Specialist from Nigeria">
-    <meta property="og:url" content="https://apuyeblessing.vercel.com">
+    <meta property="og:url" content="https://apuyeblessing.vercel.app">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Apuye Blessing Portfolio">
     <meta property="og:locale" content="en_US">
@@ -48,11 +48,37 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://apuyeblessing.vercel.com">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.1.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+        "react/": "https://esm.sh/react@^19.1.0/"
+      }
+    }
+    </script>
+
+    <!-- Favicon will be set dynamically via JavaScript -->
+    <script type="module">
+      import aboutImage from './assets/about.png';
+      
+      // Set favicon dynamically
+      const link = document.createElement('link');
+      link.rel = 'icon';
+      link.type = 'image/png';
+      link.href = aboutImage;
+      document.head.appendChild(link);
+      
+      // Set Apple touch icon
+      const appleLink = document.createElement('link');
+      appleLink.rel = 'apple-touch-icon';
+      appleLink.href = aboutImage;
+      document.head.appendChild(appleLink);
+    </script>
 
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
@@ -62,7 +88,7 @@
       "name": "Apuye Blessing",
       "jobTitle": "Virtual Assistant & Customer Support Specialist",
       "description": "Professional Virtual Assistant and Customer Support Specialist from Nigeria with expertise in customer experience enhancement and operations optimization.",
-      "url": "https://apuyeblessing.vercel.com",
+      "url": "https://apuyeblessing.vercel.app",
       "image": "/assets/about.png",
       "address": {
         "@type": "PostalAddress",
@@ -159,20 +185,7 @@
         letter-spacing: -0.025em; 
       }
     </style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-brand-page-bg text-brand-charcoal antialiased font-inter">
     <div id="root"></div>

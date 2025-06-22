@@ -1,7 +1,12 @@
 import { NavLink, Metric, Service, PortfolioItem, Differentiator, Testimonial, ContactLink, ContactMethod, AvailabilityInfo } from './types'; // Removed AboutAchievement
 
-// Local assets base path
-const ASSETS_BASE = "/assets";
+// Import images as modules for proper bundling
+import apuyePortrait from './assets/apuye-blessing.jpeg';
+import aboutImage from './assets/about.png';
+import complianceSuccess from './assets/compliance-success.png';
+import cxTransformation from './assets/cx-transformation.png';
+import costOptimisation from './assets/cost-optimisation.png';
+import whyChooseMe from './assets/why-choose-me.png';
 
 // --- LOGO TEXT ---
 export const HEADER_LOGO_TEXT = "Apuye Blessing";
@@ -10,7 +15,7 @@ export const HEADER_RESUME_TEXT = "View My Resume";
 export const HEADER_RESUME_LINK = "/apuye_blessing_resume_placeholder.pdf"; // Placeholder path
 
 // --- HERO SECTION ---
-export const HERO_VISUAL_URL = `${ASSETS_BASE}/apuye-blessing.jpeg`; // Local portrait image
+export const HERO_VISUAL_URL = apuyePortrait; // Local portrait image
 export const HERO_TITLE_ACCENT = "Apuye Blessing";
 export const HERO_SUBTITLE = "Virtual Assistant & Customer Support Specialist";
 export const HERO_DESCRIPTION = "Dedicated professional with proven expertise in customer experience enhancement, operations optimization, and accessible support. Currently available for freelance, part-time, and full-time opportunities to help businesses deliver exceptional service.";
@@ -32,7 +37,7 @@ export const NAV_LINKS: NavLink[] = [
 export const HEADER_CTA_TEXT = "Let's Talk";
 
 // --- ABOUT ME SECTION ---
-export const ABOUT_VISUAL_URL = `${ASSETS_BASE}/about.png`; // Local about section image
+export const ABOUT_VISUAL_URL = aboutImage; // Local about section image
 export const ABOUT_TITLE_ACCENT = "Typical";
 export const ABOUT_PARAGRAPH_1 = "More than just a Virtual Assistant, I'm a proactive and solution-oriented Virtual Assistant and Customer Support Specialist with a passion for delivering exceptional service experiences. My background in History and International Studies from the University of Calabar, combined with fluency in American Sign Language (ASL), gives me a unique perspective on creating inclusive and accessible customer interactions.";
 export const ABOUT_PARAGRAPH_2 = "With experience in managing customer relationships, optimizing business operations, and ensuring compliance standards, I bring a comprehensive skill set that goes beyond traditional VA services. My approach focuses on understanding your business needs and implementing solutions that drive measurable results.";
@@ -96,7 +101,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: "Managed high-volume customer interactions while maintaining exceptional service quality and compliance standards.",
     metric: "100% Compliance",
     impact: "Successfully handled over 50 daily customer cases with flawless compliance.",
-    imageUrl: `${ASSETS_BASE}/compliance-success.png`, // Local compliance success image
+    imageUrl: complianceSuccess, // Local compliance success image
     imageAlt: 'Customer support and compliance dashboard showing 100% success rate',
     isFeatured: true,
   },
@@ -107,7 +112,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: "Redesigned customer service protocols and processes to significantly improve satisfaction rates.",
     metric: "70% → 95% CSAT",
     impact: "Improved customer satisfaction from 70% to 95% through systematic improvements.",
-    imageUrl: `${ASSETS_BASE}/cx-transformation.png`, // Local CX transformation image
+    imageUrl: cxTransformation, // Local CX transformation image
     imageAlt: 'Customer satisfaction improvement metrics and interface',
   },
   {
@@ -117,13 +122,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: "Conducted comprehensive operational analysis to identify and implement major cost-saving measures.",
     metric: "₦200,000+ Saved Monthly",
     impact: "Identified and implemented cost savings worth over ₦200,000 monthly.",
-    imageUrl: `${ASSETS_BASE}/cost-optimisation.png`, // Local cost optimization image
+    imageUrl: costOptimisation, // Local cost optimization image
     imageAlt: 'Cost optimization analysis and financial savings charts',
   }
 ];
 
 // --- WHY CHOOSE ME SECTION ---
-export const WHYCHOOSEME_VISUAL_URL = `${ASSETS_BASE}/why-choose-me.png`;
+export const WHYCHOOSEME_VISUAL_URL = whyChooseMe;
 export const WHYCHOOSEME_TITLE = "Why Choose Me?";
 export const WHYCHOOSEME_SUBTITLE = "Beyond standard VA services, I offer strategic advantages for your business.";
 
