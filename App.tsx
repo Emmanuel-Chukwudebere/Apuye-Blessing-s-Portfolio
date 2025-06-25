@@ -27,12 +27,14 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/portfolio/:id" element={<CaseStudyPage />} />
-        </Routes>
-      </main>
+      <div className="mx-auto max-w-7xl px-5 md:px-4">
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/portfolio/:id" element={<CaseStudyPage />} />
+          </Routes>
+        </main>
+      </div>
       <Footer />
     </>
   );
